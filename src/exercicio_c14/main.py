@@ -1,12 +1,27 @@
 import numpy as np
 
-qtd = int(input('Quantidade de números do vetor: '))
-numeros = []
+def criar_array(numeros: list[int]) -> np.ndarray:
+    return np.array(numeros)
 
-for i in range(qtd):
-    numero = int(input(f'Digite o número: '))
-    numeros.append(numero)
+def calcular_estatisticas(array: np.ndarray) -> dict:
+    return {
+        "soma": int(np.sum(array)),
+        "media": float(np.mean(array)),
+        "maximo": int(np.max(array)),
+    }
 
-array = np.array(numeros)
+if __name__ == "__main__":
+    qtd = int(input('Digite uma quantidade de elementos: '))
+    numeros = []
 
-print (array)
+    for i in range(qtd):
+        numero = int(input(f'Digite o número: '))
+        numeros.append(numero)
+
+    array = criar_array(numeros)
+    print("Array:", array)
+
+    estatisticas = calcular_estatisticas(array)
+    print("Estatísticas:", estatisticas)
+
+
