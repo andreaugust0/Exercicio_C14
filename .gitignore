@@ -1,0 +1,35 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.manifest
+*.spec
+
+# --- Ambientes virtuais ---
+.venv/
+.env/
+env/
+venv/
+
+# --- Poetry ---
+dist/
+.poetry/
+.cache/
+.pytest_cache/
+
+# --- Logs ---
+*.log
+
+# --- IDEs ---
+# PyCharm / IntelliJ
+.idea/
+# VSCode
+.vscode/
+
+# --- Sistema ---
+.DS_Store
+Thumbs.db
