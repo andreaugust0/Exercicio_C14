@@ -7,7 +7,7 @@ def calcular_estatisticas(array: np.ndarray) -> dict:
     return {
         "soma": int(np.sum(array)),
         "media": float(np.mean(array)),
-        "maximo": int(np.min(array)),
+        "maximo": int(np.max(array)),
     }
 
 if __name__ == "__main__":
